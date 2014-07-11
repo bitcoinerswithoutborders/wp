@@ -1,0 +1,7 @@
+wp-config.php
+static
+/c/lib/buddypress
+/c/lib/membership
+/c/lib/regenerate-thumbnails
+/c/lib/adminer
+/c/lib/wordpress-importer
