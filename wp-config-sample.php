@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', '|database_name|');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', '|database_user|');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', '|database_password|');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '|database_host|');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -43,15 +43,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
-
+|AUTH_KEY|
+|SECURE_AUTH_KEY|
+|LOGGED_IN_KEY|
+|NONCE_KEY|
+|AUTH_SALT|
+|SECURE_AUTH_SALT|
+|LOGGED_IN_SALT|
+|NONCE_SALT|
 /**#@-*/
 
 /**
@@ -60,7 +59,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_bwb_235_';
+$table_prefix  = '|database_table_prefix|';
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -79,7 +78,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 
 $protocol = empty($_SERVER['HTTPS']) ? 'http://' : 'https://';
@@ -102,13 +101,13 @@ define( 'UPLOADS', 'static' );
 /**
  * Enables the wordpress multisite features
  */
-define('WP_ALLOW_MULTISITE', true);
-// define('MULTISITE', true);
-// define('SUBDOMAIN_INSTALL', true);
-// define('DOMAIN_CURRENT_SITE', 'bwb.is');
-// define('PATH_CURRENT_SITE', '/');
-// define('SITE_ID_CURRENT_SITE', 1);
-// define('BLOG_ID_CURRENT_SITE', 1);
+//define('WP_ALLOW_MULTISITE', true);
+ define('MULTISITE', true);
+ define('SUBDOMAIN_INSTALL', true);
+ define('DOMAIN_CURRENT_SITE', '|site_url|');
+ define('PATH_CURRENT_SITE', '/');
+ define('SITE_ID_CURRENT_SITE', 1);
+ define('BLOG_ID_CURRENT_SITE', 1);
 
 /* That's all, stop editing! Happy blogging. */
 
