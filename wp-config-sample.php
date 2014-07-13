@@ -81,17 +81,28 @@ define('WPLANG', '');
 define('WP_DEBUG', true);
 
 
-$protocol = empty($_SERVER['HTTPS']) ? 'http://' : 'https://';
 
 /**
  * Move Wordpress directories to custom locations
  *
  */
+ 
+$protocol = empty($_SERVER['HTTPS']) ? 'http://' : 'https://';
+
 define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/c'); // no host name, no trailing backslash
 define('WP_CONTENT_URL', $protocol . $_SERVER['SERVER_NAME'] . '/c');
 
-define('WP_PLUGIN_DIR', $_SERVER['DOCUMENT_ROOT'] . '/c/lib');
-define('WP_PLUGIN_URL', $protocol . $_SERVER['SERVER_NAME'] . '/c/lib');
+define('WP_PLUGIN_DIR', WP_CONTENT_DIR . '/lib');
+define('WP_PLUGIN_URL', WP_CONTENT_URL . '/lib');
+
+
+define('PLUGINDIR', '/c/lib');
+define('MUPLUGINDIR', '/c/mu-plugins');
+
+define('WPMU_PLUGIN_URL', WP_CONTENT_URL . '/mu-plugins');
+
+define('BP_PLUGIN_DIR', WP_CONTENT_DIR . '/lib/buddypress/');
+define('BP_PLUGIN_URL', WP_CONTENT_URL . '/lib/buddypress/');
 
 /**
  * Define Path of Uploads dir
