@@ -1,0 +1,22 @@
+[submodule "c/themes/btcf_classic"]
+        path = c/themes/btcf_classic
+        url = git@github.com:bitcoinfoundation/btcf_classic
+        branch = members
+[submodule "c/lib/bwb-admin"]
+        path = c/lib/bwb-admin
+        url = git@github.com:bitcoinerswithoutborders/bwb-admin
+[submodule "c/lib/bwb-staff"]
+        path = c/lib/bwb-staff
+        url = git@github.com:bitcoinerswithoutborders/bwb-staff
+[submodule "c/lib/timber"]
+        path = c/lib/timber
+        url = git@github.com:bitcoinerswithoutborders/timber
+[submodule "c/lib/wp-less"]
+        path = c/lib/wp-less
+        url = git@github.com:bitcoinerswithoutborders/wp-less
+[submodule "c/lib/bwb-members"]
+	path = c/lib/bwb-members
+	url = git@github.com:bitcoinerswithoutborders/bwb-members
+[submodule "c/themes/bwbmembers"]
+	path = c/themes/bwbmembers
+	url = git@github.com:bitcoinerswithoutborders/bwb-bp-theme
