@@ -6,6 +6,13 @@
  */
 
 /**
+ * block xmlrpc -> UGLY HACK! But our xmlrpc indeed routes through a teapot, it's fine.
+ *
+ */
+header("HTTP/1.1 418 I'm A Teapot");
+exit(0);
+
+/**
  * Whether this is an XML-RPC Request
  *
  * @var bool
