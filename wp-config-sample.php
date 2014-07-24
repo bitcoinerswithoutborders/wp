@@ -89,20 +89,21 @@ define('WP_DEBUG', true);
  
 $protocol = empty($_SERVER['HTTPS']) ? 'http://' : 'https://';
 
-define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/c'); // no host name, no trailing backslash
+define('WP_CONTENT_DIR', dirname(__FILE__) . '/c'); // no host name, no trailing backslash
 define('WP_CONTENT_URL', $protocol . $_SERVER['SERVER_NAME'] . '/c');
 
 define('WP_PLUGIN_DIR', WP_CONTENT_DIR . '/lib');
 define('WP_PLUGIN_URL', WP_CONTENT_URL . '/lib');
 
+define('PLUGINDIR', WP_PLUGIN_DIR );
+define('MUPLUGINDIR', WP_CONTENT_DIR . '/mu-plugins');
 
-define('PLUGINDIR', '/c/lib');
-define('MUPLUGINDIR', '/c/mu-plugins');
-
-define('WPMU_PLUGIN_URL', WP_CONTENT_URL . '/mu-plugins');
+define('WPMU_PLUGIN_URL',  WP_CONTENT_URL . '/mu-plugins');
 
 define('BP_PLUGIN_DIR', WP_CONTENT_DIR . '/lib/buddypress/');
-define('BP_PLUGIN_URL', WP_CONTENT_URL . '/lib/buddypress/');
+define('BP_PLUGIN_URL', '/c/lib/buddypress/');
+
+define( 'NOBLOGREDIRECT', $protocol . $_SERVER['SERVER_NAME'] );
 
 /**
  * Define Path of Uploads dir
@@ -120,6 +121,9 @@ define('DOMAIN_CURRENT_SITE', '|site_url|');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
+
+/* Let the Sunshine in */
+define('SUNRISE', 'on');
 
 /* That's all, stop editing! Happy blogging. */
 
