@@ -8,9 +8,6 @@
 [submodule "c/lib/bwb-staff"]
         path = c/lib/bwb-staff
         url = git@github.com:bitcoinerswithoutborders/bwb-staff
-[submodule "c/lib/timber"]
-        path = c/lib/timber
-        url = git@github.com:bitcoinerswithoutborders/timber
 [submodule "c/lib/wp-less"]
         path = c/lib/wp-less
         url = git@github.com:bitcoinerswithoutborders/wp-less
@@ -23,3 +20,6 @@
 [submodule "c/lib/bwb-member-migration"]
 	path = c/lib/bwb-member-migration
 	url = git@github.com:bitcoinerswithoutborders/bwb-member-migration.git
+[submodule "c/lib/timber"]
+	path = c/lib/timber
+	url = git@github.com:bitcoinerswithoutborders/timber
