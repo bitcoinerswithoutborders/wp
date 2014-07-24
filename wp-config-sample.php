@@ -43,14 +43,7 @@ define('DB_COLLATE', 'utf8_unicode_ci');
  *
  * @since 2.6.0
  */
-|AUTH_KEY|
-|SECURE_AUTH_KEY|
-|LOGGED_IN_KEY|
-|NONCE_KEY|
-|AUTH_SALT|
-|SECURE_AUTH_SALT|
-|LOGGED_IN_SALT|
-|NONCE_SALT|
+|SALTS|
 /**#@-*/
 
 /**
@@ -116,7 +109,7 @@ define( 'UPLOADS', 'static' );
 //define('WP_ALLOW_MULTISITE', true);
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', true);
-define('DOMAIN_CURRENT_SITE', '|site_url|');
+define('DOMAIN_CURRENT_SITE', '|root_url|');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
