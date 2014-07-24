@@ -20,3 +20,6 @@
 [submodule "c/lib/bwb-member-migration"]
 	path = c/lib/bwb-member-migration
 	url = git@github.com:bitcoinerswithoutborders/bwb-member-migration.git
+[submodule "c/lib/timber"]
+	path = c/lib/timber
+	url = git@github.com:bitcoinerswithoutborders/timber
