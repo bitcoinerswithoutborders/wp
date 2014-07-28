@@ -13,5 +13,6 @@ static
 /c/lib/buddypress-xprofile-image-field
 /c/lib/wp-email-login
 /c/lib/timber-library
+/c/lib/dbview
+/c/lib/advanced-cron-manager
 /c/themes/bitcoinfoundation.org-wb
-
