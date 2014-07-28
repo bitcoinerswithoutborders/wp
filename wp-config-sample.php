@@ -96,12 +96,21 @@ define('WPMU_PLUGIN_URL',  WP_CONTENT_URL . '/mu-plugins');
 define('BP_PLUGIN_DIR', WP_CONTENT_DIR . '/lib/buddypress/');
 define('BP_PLUGIN_URL', '/c/lib/buddypress/');
 
-define( 'NOBLOGREDIRECT', $protocol . $_SERVER['SERVER_NAME'] );
-
 /**
  * Define Path of Uploads dir
  */
 define( 'UPLOADS', 'static' );
+
+/**
+ * unused subdomains redirect to root url
+ */ 
+define( 'NOBLOGREDIRECT', $protocol . '|root_url|' );
+
+/** 
+ * FTP/SSH Upload method
+ */ 
+define('FS_METHOD', 'direct');
+
 
 /**
  * Enables the wordpress multisite features
@@ -117,6 +126,15 @@ define('BLOG_ID_CURRENT_SITE', 1);
 
 /* Let the Sunshine in */
 define('SUNRISE', 'on');
+
+
+/* Membership plugin template globals */
+define('MEMBERSHIP_SUBSCRIPTION_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/subscription.form.php');
+//define('MEMBERSHIP_REGISTRATION_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/registration.form.php');
+//define('MEMBERSHIP_MEMBER_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/member.form.php');
+//define('MEMBERSHIP_UPGRADE_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/upgrade.form.php');
+//define('MEMBERSHIP_RENEW_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/renew.form.php');
+//define('MEMBERSHIP_PAYMENT_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/payment.form.php');
 
 /* That's all, stop editing! Happy blogging. */
 
