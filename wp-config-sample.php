@@ -73,7 +73,6 @@ define('WPLANG', '');
  */
 define('WP_DEBUG', |debug|);
 
-
 /**
  * Move Wordpress directories to custom locations
  *
