@@ -99,7 +99,7 @@ define('BP_PLUGIN_URL', '/c/lib/buddypress/');
 /**
  * Define Path of Uploads dir
  */
-define( 'UPLOADS', 'static' );
+define( 'UPLOADS', '|uploads_dir|' );
 
 /**
  * unused subdomains redirect to root url
