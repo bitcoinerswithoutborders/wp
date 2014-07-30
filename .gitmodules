@@ -23,3 +23,9 @@
 [submodule "c/lib/timber"]
 	path = c/lib/timber
 	url = git@github.com:bitcoinerswithoutborders/timber
+[submodule "c/lib/wp-ip.board-user-bridge"]
+	path = c/lib/wp-ip.board-user-bridge
+	url = git@github.com:bitcoinerswithoutborders/wp-ip.board-user-bridge.git
+[submodule "c/lib/wp-members-authentication-bridge"]
+	path = c/lib/wp-members-authentication-bridge
+	url = git@github.com:bitcoinerswithoutborders/wp-members-authentication-bridge
