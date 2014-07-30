@@ -128,7 +128,7 @@ define('SUNRISE', 'on');
 
 /* Membership plugin template globals */
 define('MEMBERSHIP_SUBSCRIPTION_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/subscription.form.php');
-//define('MEMBERSHIP_REGISTRATION_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/registration.form.php');
+define('MEMBERSHIP_REGISTRATION_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/registration.form.php');
 //define('MEMBERSHIP_MEMBER_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/member.form.php');
 //define('MEMBERSHIP_UPGRADE_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/upgrade.form.php');
 //define('MEMBERSHIP_RENEW_FORM', __DIR__ . '/c/lib/bwb-members/views/membership/renew.form.php');
