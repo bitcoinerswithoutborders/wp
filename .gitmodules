@@ -38,3 +38,6 @@
 [submodule "c/lib/btcf-api-master"]
 	path = c/lib/btcf-api-master
 	url = git@bitbucket.org:bwb/btcf-api-master
+[submodule "c/lib/bwb-bp-search"]
+	path = c/lib/bwb-bp-search
+	url = git@bitbucket.org:bwb/bwb-bp-search
