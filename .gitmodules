@@ -29,3 +29,12 @@
 [submodule "c/lib/wp-members-authentication-bridge"]
 	path = c/lib/wp-members-authentication-bridge
 	url = git@github.com:bitcoinerswithoutborders/wp-members-authentication-bridge
+[submodule "c/lib/bwb-login-via-email"]
+	path = c/lib/bwb-login-via-email
+	url = git@bitbucket.org:bwb/bwb-login-via-email
+[submodule "c/lib/btcf-api-client"]
+	path = c/lib/btcf-api-client
+	url = git@bitbucket.org:bwb/btcf-api-client
+[submodule "c/lib/btcf-api-master"]
+	path = c/lib/btcf-api-master
+	url = git@bitbucket.org:bwb/btcf-api-master
